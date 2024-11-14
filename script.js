@@ -18,7 +18,7 @@ function calculateSplitTip(){
     const percentage = parseFloat(document.getElementById("percentageAmount2").value);
     const people = parseFloat(document.getElementById("numberPeople").value);
 
-    if (!isNaN(amount) && !isNaN(percentage) && !isNaN(people) && people >= 1) {
+    if (!isNaN(amount) && !isNaN(percentage) && !isNaN(people) && amount >= 0 && percentage >= 0 && percentage <= 100 && people >= 1) {
         const split = (amount / people).toFixed(2);
         const tip = (split * (percentage / 100)).toFixed(2);
         document.getElementById("splitResult").innerHTML = `Tip Amount : $${tip} per person`;
