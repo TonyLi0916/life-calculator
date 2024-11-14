@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>LifeCalculator</title>
+    <link href= "style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="pageTitle">Tip Calculator</h1>
+    <p id="pageDesc">An easy-to-use Tip Calculator to help you quickly and accurately calculate tips for restaurants, bars, and any service where gratuity is appreciated. 
+        Perfect for anyone who wants to leave the right amount with confidence, whether dining solo or splitting the bill with friends!</p>
+
+    <img src = "tips.jpg" alt ="tip jar">
+    <div class = "container">
+        <table id ="solo">
+            <tr>
+                <th>In Cananda and the US a 15% tip before tax is usually expected</th>
+            </tr>
+            <tr>
+                <td>Price($)</td>
+                <td><input type="number" placeholder="$" min="0" id="tipAmount"></td>
+            </tr>
+            <tr>
+                <td>Percentage(%)</td>
+                <td><input type="number" placeholder="%" min="0" max = "100" id="percentageAmount"></td>
+            </tr>
+            <tr>
+                <td>
+                <button id = "singleButton" type="button">Enter</button>
+                </td>
+            </tr>
+            
+        </table>
+        
+        <div id = "singleResult"></div>
+        
+        <table id ="multiple">
+            <th>If you are splitting the bill amongst others</th>  
+            <tr>
+                <td>Price($)</td>
+                <td><input type="number" placeholder="$" min="0" id="tipAmount2"></td>
+            </tr>
+            <tr>
+                <td>Percentage(%)</td>
+                <td><input type="number" placeholder="%" min="0" max="100" id="percentageAmount2"></td>
+            </tr>
+            <tr>
+                <td># of people</td>
+                <td><input type="number" placeholder="#" min="2" id="numberPeople"></td>
+            </tr>
+            <tr>
+                <td>
+                <button id = "splitButton" type="button">Enter</button>
+                </td>
+            </tr>
+
+        </table>
+        
+        <div id = "splitResult"></div>
+
+    </div>
+
+    <footer>
+        <table id = "stats">
+            <tr>
+                <th>Type of Restaurant or Service</th>
+                <th>Common Tip Amount</th>
+            </tr>
+            <tr>
+                <td>Full service</td>
+                <td>15-20% depending on level of service (e.g. fine dining vs. family style)</td>
+            </tr>
+            <tr>
+                <td>Quick service</td>
+                <td>Up to 15% depending on level of service (e.g. fast casual vs. fast food)</td>
+            </tr>
+            <tr>
+                <td>Coffee shop or cafe</td>
+                <td>Up to 15% depending on purchase (e.g. coffee to go vs. latte and pastry to stay)</td>
+            </tr>
+            <tr>
+                <td>Bar</td>
+                <td>$1-2 per drink or 15-20% for bottle service</td>
+            </tr>
+            <tr>
+                <td>Takeout</td>
+                <td>5-10%</td>
+            </tr>
+            <tr>
+                <td>Delivery</td>
+                <td>$3-5 or more</td>
+            </tr>
+        </table>
+    
+        <p id="msg">&copy; A tip or gratuity is an additional payment for services. 
+            Customs vary globally—while tipping is expected in places like the U.S., where servers often rely on tips to meet minimum wage, 
+            it can be offensive in countries like Japan, where it's seen as disrespectful. In some places, gratuity may even be automatically added to bills.
+            As a tourist, researching local tipping practices can help ensure appreciation is shown appropriately.
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body> 
+
+</html>
