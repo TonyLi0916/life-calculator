@@ -28,7 +28,6 @@ function calculateSplitTip(){
     }
 }
 
-// event listeners 
 document.getElementById("singleButton").onclick = calculateSingleTip;
 document.getElementById("splitButton").onclick = calculateSplitTip;
 

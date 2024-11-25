@@ -78,7 +78,7 @@ img {
 
 #stats {
     width: 100%;
-    max-width: 600px; /* Limits width on larger screens */
+    max-width: 600px; 
     margin: 30px auto;
     border: 2px solid black;
     border-radius: 8px;
@@ -118,7 +118,7 @@ img {
     transform: scale(1.05); 
     background: linear-gradient(90deg, #ff758c, #ff7eb3); 
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); 
-
+}
 
 @media (max-width: 768px) {
     #pageTitle {
