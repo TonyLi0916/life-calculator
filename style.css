@@ -54,7 +54,7 @@ img {
     display: block;
 }
 
-#singleButton, #splitButton {
+#singleButton, #splitButton, #gradeButton {
     font-size: 1em;
     padding: 8px 20px;
     border-radius: 30px;
@@ -65,7 +65,7 @@ img {
     display: block;
 }
 
-#singleButton:hover, #splitButton:hover {
+#singleButton:hover, #splitButton:hover, #gradeButton:hover{
     background-color: #c48793;
 }
 
@@ -98,6 +98,28 @@ img {
     padding: 10px;
 }
 
+.calculator-link {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background: #272343;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    width: 250px;
+}
+
+.calculator-link:hover {
+    transform: scale(1.05); 
+    background: linear-gradient(90deg, #ff758c, #ff7eb3); 
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); 
+
+
 @media (max-width: 768px) {
     #pageTitle {
         font-size: 1.5em;
@@ -117,7 +139,7 @@ img {
         max-width: 250px;
     }
 
-    #singleButton, #splitButton {
+    #singleButton, #splitButton, #gradeButton {
         font-size: 1em;
         max-width: 120px;
     }
@@ -129,6 +151,11 @@ img {
 
     #msg {
         font-size: 0.9em;
+    }
+    .calculator-link {
+        font-size: 16px;
+        padding: 12px 15px;
+        width: 200px; 
     }
 }
 
@@ -151,11 +178,17 @@ img {
         padding: 10px;
     }
 
-    #singleButton, #splitButton {
+    #singleButton, #splitButton, #gradeButton {
         font-size: 0.9em;
     }
 
     #msg {
         font-size: 0.8em;
     }
+    .calculator-link {
+        font-size: 14px;
+        padding: 10px;
+        width: 90%; 
+        max-width: 300px; 
+    }  
 }

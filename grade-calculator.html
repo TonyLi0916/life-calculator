@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Grade Calculator</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="pageTitle">Final Grade Calculator</h1>
+    <p id="pageDesc">Easily calculate your final grade based on your exam weight and current grade.</p>
+
+    <div class="container">
+        <table id="finalGrade">
+            <tr>
+                <td>Current Grade (%)</td>
+                <td><input type="number" placeholder="%" min="0" id="currentGrade"></td>
+            </tr>
+            <tr>
+                <td>Exam Weight (%)</td>
+                <td><input type="number" placeholder="%" min="0" id="examWeight"></td>
+            </tr>
+            <tr>
+                <td>Desired Final Grade (%)</td>
+                <td><input type="number" placeholder="%" min="0" id="desiredGrade"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="gradeButton" type="button">Calculate</button>
+                </td>
+            </tr>
+        </table>
+
+        <div id="gradeResult"></div>
+    </div>
+    <a href="index.html" class="calculator-link">Back to Main Page</a>
+    <script src="grade-script.js"></script>
+</body>
+
+</html>
