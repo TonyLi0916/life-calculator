@@ -9,12 +9,15 @@
 </head>
 
 <body>
-    <h1 id="pageTitle">Final Grade Calculator</h1>
-    <p id="pageDesc">Easily calculate your final grade based on your exam weight and current grade.</p>
-    <img src = "grade.jpg" alt ="grade">
+    <h1 class="pageTitle">Final Grade Calculator</h1>
+    <p class="pageDesc">Easily calculate your final grade based on your exam weight and current grade.</p>
+    <img src="grade.jpg" alt="grade">
     
     <div class="container">
         <table id="finalGrade">
+            <tr>
+                <th>Calculate!</th>
+            </tr>
             <tr>
                 <td>Current Grade (%)</td>
                 <td><input type="number" placeholder="%" min="0" id="currentGrade"></td>
@@ -35,6 +38,7 @@
         </table>
 
         <div id="gradeResult"></div>
+        <div id="gradeMessage"></div>
     </div>
     <a href="index.html" class="calculator-link">Back to Main Page</a>
     <script src="grade-script.js"></script>

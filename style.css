@@ -6,7 +6,7 @@ body {
     box-sizing: border-box;
 }
 
-#pageTitle {
+.pageTitle {
     font-size: 2em; 
     color: #444444;
     text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 
@@ -16,7 +16,7 @@ body {
     margin: 10px;
 }
 
-#pageDesc {
+.pageDesc {
     text-align: center;
     font-weight: bold;
     margin: 10px 20px;
@@ -69,7 +69,7 @@ img {
     background-color: #c48793;
 }
 
-#singleResult, #splitResult {
+#singleResult, #splitResult, #gradeMessage, #gradeResult {
     color: red;
     font-weight: bold;
     text-align: center;
@@ -91,7 +91,7 @@ img {
     padding: 10px;
 }
 
-#msg {
+.msg {
     color: #A49377;
     font-weight: bold;
     text-align: center;
@@ -109,7 +109,7 @@ img {
     text-decoration: none;
     background: #272343;
     border-radius: 12px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
     transition: transform 0.2s ease, background-color 0.3s ease;
     width: 250px;
 }
@@ -121,11 +121,11 @@ img {
 }
 
 @media (max-width: 768px) {
-    #pageTitle {
+    .pageTitle {
         font-size: 1.5em;
     }
 
-    #pageDesc {
+    .pageDesc {
         font-size: 1em;
         padding: 0 10px;
     }
@@ -149,7 +149,7 @@ img {
         font-size: 0.9em;
     }
 
-    #msg {
+    .msg {
         font-size: 0.9em;
     }
     .calculator-link {
@@ -160,11 +160,11 @@ img {
 }
 
 @media (max-width: 480px) {
-    #pageTitle {
+    .pageTitle {
         font-size: 1.2em;
     }
 
-    #pageDesc {
+    .pageDesc {
         font-size: 0.9em;
     }
 
@@ -182,7 +182,7 @@ img {
         font-size: 0.9em;
     }
 
-    #msg {
+    .msg {
         font-size: 0.8em;
     }
     .calculator-link {
