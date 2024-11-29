@@ -1,6 +1,6 @@
 # Life Calculator
 
-This is a multi-page web application developed using HTML, CSS, and JavaScript. It can be used for many different purposes and encompasses calculations for domains such as mathematics, real estate, school, and general purposes.It demonstrates dynamic functionality, responsive design, and interactive features for real-time calculations. 
+This is a multi-page web application developed using HTML, CSS, and JavaScript. It can be used for many different purposes and encompasses calculations for domains such as mathematics, real estate, school, and general purposes. It demonstrates dynamic functionality, responsive design, and interactive features for real-time calculations. Deployed using github pages.
 
 - **Tip Calculator**
 - **Final Grade Calculator**
